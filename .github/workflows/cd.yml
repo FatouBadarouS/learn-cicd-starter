@@ -19,7 +19,8 @@ jobs:
 
       - name: Build production binary
         run: ./scripts/buildprod.sh
-
+      
+      - name: Authenticate to Google Cloud
         id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
